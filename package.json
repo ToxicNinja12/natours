@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for Natours",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass --no-source-map --style=compressed sass/main.scss css/style.css",
+    "watch:sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToxicNinja12/natours.git"
+  },
+  "author": "ToxicNinja12",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ToxicNinja12/natours/issues"
+  },
+  "homepage": "https://github.com/ToxicNinja12/natours#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
