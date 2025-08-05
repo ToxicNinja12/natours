@@ -27,6 +27,6 @@ npm run watch:sass
 
 4. Open `index.html` file in your browser and enjoy 🌍!
 
-## 📝 License
+## 📝 Disclaimer
 
 This is a learning project and is not intended for commercial use or redistribution.
