@@ -76,7 +76,7 @@
     top: -0.4rem;
 
     &::after {
-      @include position-center;
+      @include absCenter;
 
       content: "";
       display: block;
