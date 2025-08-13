@@ -24,11 +24,20 @@
     overflow: hidden;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-land) {
+      display: block;
+      width: 80%;
+    }
   }
 
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tab-land) {
+      display: none;
+    }
   }
 
   &__right {
@@ -41,6 +50,13 @@
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-land) {
+      display: inline-block;
+      width: 49.8%;
+      height: 15rem;
+      object-fit: cover;
+    }
   }
 
   &__text {
@@ -52,6 +68,13 @@
     column-rule: 1px solid $color-gray-light-2;
 
     hyphens: auto;
+
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+      column-count: auto;
+      max-height: 20rem;
+      overflow-y: scroll;
+    }
   }
 
   // Open States
