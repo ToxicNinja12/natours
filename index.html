@@ -112,19 +112,25 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1-large.jpg"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 15vw, (max-width: 37.5em) 30vw, 270px"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
+                src="img/nat-1-large.jpg"
               />
               <img
-                src="img/nat-2-large.jpg"
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 15vw, (max-width: 37.5em) 30vw, 270px"
                 alt="Photo 2"
                 class="composition__photo composition__photo--p2"
+                src="img/nat-2-large.jpg"
               />
               <img
-                src="img/nat-3-large.jpg"
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 15vw, (max-width: 37.5em) 30vw, 270px"
                 alt="Photo 3"
                 class="composition__photo composition__photo--p3"
+                src="img/nat-3-large.jpg"
               />
             </div>
           </div>
@@ -309,9 +315,11 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                src="img/nat-8.jpg"
+                srcset="img/nat-8.jpg 300w, img/nat-8-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 75em) 17vw, 225px"
                 alt="Person on a tour"
                 class="story__image"
+                src="img/nat-8.jpg"
               />
               <figcaption class="story__caption">Mary Smith</figcaption>
             </figure>
@@ -333,9 +341,11 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                src="img/nat-9.jpg"
+                srcset="img/nat-9.jpg 300w, img/nat-9-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 75em) 17vw, 225px"
                 alt="Person on a tour"
                 class="story__image"
+                src="img/nat-9.jpg"
               />
               <figcaption class="story__caption">Jack Wilson</figcaption>
             </figure>
@@ -428,11 +438,20 @@
 
       <footer class="footer">
         <div class="footer__logo-box">
-          <img
-            src="img/logo-green-2x.png"
-            alt="Full logo"
-            class="footer__logo"
-          />
+          <picture class="footer__logo">
+            <source
+              srcset="
+                img/logo-green-small-1x.png 1x,
+                img/logo-green-small-2x.png 2x
+              "
+              media="(max-width: 37.5em)"
+            />
+            <img
+              srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+              alt="Full logo"
+              src="img/logo-green-2x.png"
+            />
+          </picture>
         </div>
 
         <div class="row">
@@ -473,8 +492,20 @@
       <div class="popup" id="popup">
         <div class="popup__content">
           <div class="popup__left">
-            <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
-            <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+            <img
+              srcset="img/nat-8.jpg 300w, img/nat-8-large.jpg 1000w"
+              sizes="(max-width: 75em) 0vw, 500px"
+              alt="Tour photo"
+              class="popup__img"
+              src="img/nat-8.jpg"
+            />
+            <img
+              srcset="img/nat-9.jpg 300w, img/nat-9-large.jpg 1000w"
+              sizes="(max-width: 75em) 0vw, 500px"
+              alt="Tour photo"
+              class="popup__img"
+              src="img/nat-9.jpg"
+            />
           </div>
           <div class="popup__right">
             <a href="#section-tours" class="popup__close">&times;</a>
